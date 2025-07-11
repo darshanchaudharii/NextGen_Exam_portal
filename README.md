@@ -32,3 +32,10 @@ An AI‑powered, full‑stack web application designed for secure, scalable, and
 - Docker, Kubernetes
 - Jenkins (CI/CD Pipeline)
 
+  ## 📝 License  
+This project is open-source and available under the [MIT License](LICENSE).
+
+## 🙌 Acknowledgments  
+Special thanks to the open-source community and contributors of **Spring Boot**, **Angular**, and **Chart.js** for their powerful frameworks and continuous support.
+
+
