@@ -27,6 +27,17 @@ An AI‑powered, full‑stack web application designed for secure, scalable, and
 - Angular 17+, TypeScript, RxJS, HTML, CSS
 - Chart.js, Bootstrap (optional)
 
+  ## 🧩 API Documentation
+
+All backend endpoints are exposed as RESTful APIs.  
+For full documentation, refer to: `/docs/api-spec.yaml` or use Postman Collection in `/docs/postman_collection.json`.
+
+Example:
+- `POST /api/auth/login` – Login with JWT
+- `GET /api/exams/{id}` – Fetch exam details
+- `POST /api/results` – Submit answers
+
+
 ### DevOps:
 - Git & GitHub
 - Docker, Kubernetes
