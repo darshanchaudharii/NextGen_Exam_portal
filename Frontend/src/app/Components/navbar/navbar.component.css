@@ -1,0 +1,33 @@
+/* Base button style */
+.btn.btn-black {
+  background-color: #000;        /* black button */
+  color: #fff;                   /* white text */
+  border-radius: 8px;            /* rounded corners */
+  padding: 8px 16px;             /* spacing */
+  margin-left: 10px;             /* small gap */
+  transition: all 0.3s ease;     /* smooth hover animation */
+  text-decoration: none;         /* remove underline */
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Hover effect */
+.btn.btn-black:hover {
+  background-color: #ff9800;     /* orange on hover */
+  color: #fff;
+  transform: scale(1.05);        /* slight zoom effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+/* Custom navbar background */
+.navbar {
+ background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); /* nice gradient blue */
+  padding: 10px 20px;
+}
+/* Make the navbar logo clearer */
+.navbar-brand img {
+  width: 120px;          /* slightly larger */
+  height: auto;          /* keep aspect ratio */
+  object-fit: contain;   /* avoid stretching */
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3)); /* add subtle shadow */
+}
