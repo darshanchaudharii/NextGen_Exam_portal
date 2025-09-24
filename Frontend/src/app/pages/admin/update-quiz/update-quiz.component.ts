@@ -5,9 +5,10 @@ import { QuizServicesService } from 'src/app/Services/Quiz Services/quiz-service
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-update-quiz',
-templateUrl: './update-quiz.component.html',
-styleUrls: ['./update-quiz.component.css']
+    selector: 'app-update-quiz',
+    templateUrl: './update-quiz.component.html',
+    styleUrls: ['./update-quiz.component.css'],
+    standalone: false
 })
 export class UpdateQuizComponent implements OnInit {
 

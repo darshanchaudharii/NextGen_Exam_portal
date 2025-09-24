@@ -3,9 +3,10 @@ import { CategoryServiceService } from 'src/app/Services/Category Services/categ
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-sidebar-user',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+    selector: 'app-sidebar-user',
+    templateUrl: './sidebar.component.html',
+    styleUrls: ['./sidebar.component.css'],
+    standalone: false
 })
 export class SidebarComponent implements OnInit {
   categories: any;

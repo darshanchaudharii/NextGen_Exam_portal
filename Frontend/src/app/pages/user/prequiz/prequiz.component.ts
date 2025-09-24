@@ -5,9 +5,10 @@ import Swal from 'sweetalert2';
 
 
 @Component({
-selector: 'app-prequiz',
-templateUrl: './prequiz.component.html',
-styleUrls: ['./prequiz.component.css']
+    selector: 'app-prequiz',
+    templateUrl: './prequiz.component.html',
+    styleUrls: ['./prequiz.component.css'],
+    standalone: false
 })
 export class PrequizComponent implements OnInit {
 

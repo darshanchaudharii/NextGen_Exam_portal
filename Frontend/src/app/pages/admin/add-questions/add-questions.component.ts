@@ -4,9 +4,10 @@ import { QuestionsServiceService } from 'src/app/Services/Questions Services/que
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-add-questions',
-templateUrl: './add-questions.component.html',
-styleUrls: ['./add-questions.component.css']
+    selector: 'app-add-questions',
+    templateUrl: './add-questions.component.html',
+    styleUrls: ['./add-questions.component.css'],
+    standalone: false
 })
 export class AddQuestionsComponent implements OnInit {
 qId: any;

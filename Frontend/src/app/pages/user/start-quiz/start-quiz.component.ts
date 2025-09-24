@@ -6,9 +6,10 @@ import { QuizServicesService } from 'src/app/Services/Quiz Services/quiz-service
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-start-quiz',
-templateUrl: './start-quiz.component.html',
-styleUrls: ['./start-quiz.component.css']
+    selector: 'app-start-quiz',
+    templateUrl: './start-quiz.component.html',
+    styleUrls: ['./start-quiz.component.css'],
+    standalone: false
 })
 export class StartQuizComponent implements OnInit {
 qid:any;

@@ -3,9 +3,10 @@ import { UserService } from 'src/app/Services/User Services/user.service';
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-welcome',
-templateUrl: './welcome.component.html',
-styleUrls: ['./welcome.component.css']
+    selector: 'app-welcome',
+    templateUrl: './welcome.component.html',
+    styleUrls: ['./welcome.component.css'],
+    standalone: false
 })
 export class WelcomeComponent implements OnInit {
 constructor(private userService: UserService) { }

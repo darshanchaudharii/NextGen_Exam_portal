@@ -3,9 +3,10 @@ import { UserService } from 'src/app/Services/User Services/user.service';
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-all-users',
-templateUrl: './all-users.component.html',
-styleUrls: ['./all-users.component.css']
+    selector: 'app-all-users',
+    templateUrl: './all-users.component.html',
+    styleUrls: ['./all-users.component.css'],
+    standalone: false
 })
 export class AllUsersComponent implements OnInit {
 users=[

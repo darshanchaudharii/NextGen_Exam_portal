@@ -3,9 +3,10 @@ import { UserService } from 'src/app/Services/User Services/user.service';
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-signup',
-templateUrl: './signup.component.html',
-styleUrls: ['./signup.component.css']
+    selector: 'app-signup',
+    templateUrl: './signup.component.html',
+    styleUrls: ['./signup.component.css'],
+    standalone: false
 })
 export class SignupComponent implements OnInit {
 

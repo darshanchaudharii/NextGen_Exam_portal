@@ -4,9 +4,10 @@ import { QuestionsServiceService } from 'src/app/Services/Questions Services/que
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-view-quiz-questions',
-templateUrl: './view-quiz-questions.component.html',
-styleUrls: ['./view-quiz-questions.component.css']
+    selector: 'app-view-quiz-questions',
+    templateUrl: './view-quiz-questions.component.html',
+    styleUrls: ['./view-quiz-questions.component.css'],
+    standalone: false
 })
 export class ViewQuizQuestionsComponent implements OnInit {
 

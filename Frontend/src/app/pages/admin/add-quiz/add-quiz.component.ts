@@ -4,9 +4,10 @@ import { QuizServicesService } from 'src/app/Services/Quiz Services/quiz-service
 import Swal from 'sweetalert2';
 
 @Component({
-selector: 'app-add-quiz',
-templateUrl: './add-quiz.component.html',
-styleUrls: ['./add-quiz.component.css']
+    selector: 'app-add-quiz',
+    templateUrl: './add-quiz.component.html',
+    styleUrls: ['./add-quiz.component.css'],
+    standalone: false
 })
 export class AddQuizComponent implements OnInit {
 categories=[];
