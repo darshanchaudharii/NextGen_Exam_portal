@@ -8,7 +8,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { authInterceptorProviders } from './Services/Auth and helper/auth.interceptor';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
@@ -38,49 +38,42 @@ import { AllAdminsComponent } from './pages/admin/all-admins/all-admins.componen
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { AllUsersComponent } from './pages/admin/all-users/all-users.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    SignupComponent,
-    LoginComponent,
-    HomeComponent,
-    DashboardComponent,
-    UserDashboardComponent,
-    ProfileComponent,
-    SidebarComponent,
-    WelcomeComponent,
-    ViewCategoriesComponent,
-    AddCategoryComponent,
-    ViewQuizzesComponent,
-    AddQuizComponent,
-    UpdateQuizComponent,
-    ViewQuizQuestionsComponent,
-    AddQuestionsComponent,
-    UserSidebar,
-    LoadQuizComponent,
-    PrequizComponent,
-    StartQuizComponent,
-    AllUsersComponent,
-    AllAdminsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    MatListModule,
-    MatCardModule,
-    MatIconModule,
-    MatButtonModule,
-    MatSlideToggleModule,
-    MatProgressSpinnerModule,
-    MatTableModule,
-    MatTooltipModule,
-  ],
-  providers: [authInterceptorProviders],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        NavbarComponent,
+        FooterComponent,
+        SignupComponent,
+        LoginComponent,
+        HomeComponent,
+        DashboardComponent,
+        UserDashboardComponent,
+        ProfileComponent,
+        SidebarComponent,
+        WelcomeComponent,
+        ViewCategoriesComponent,
+        AddCategoryComponent,
+        ViewQuizzesComponent,
+        AddQuizComponent,
+        UpdateQuizComponent,
+        ViewQuizQuestionsComponent,
+        AddQuestionsComponent,
+        UserSidebar,
+        LoadQuizComponent,
+        PrequizComponent,
+        StartQuizComponent,
+        AllUsersComponent,
+        AllAdminsComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        MatListModule,
+        MatCardModule,
+        MatIconModule,
+        MatButtonModule,
+        MatSlideToggleModule,
+        MatProgressSpinnerModule,
+        MatTableModule,
+        MatTooltipModule], providers: [authInterceptorProviders, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
