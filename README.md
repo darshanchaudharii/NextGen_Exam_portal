@@ -1,6 +1,12 @@
+<div align="center">
+
+![Project Logo](./logo.png)
+
 # 📘 NextGen Intelligent Exam & Assessment Platform
 
 An AI-powered, full-stack web application designed for secure, scalable, and adaptive online examinations. Built using **Java Spring Boot** for the backend and **Angular** for the frontend, this platform supports real-time analytics, dynamic question generation, and role-based access control.
+
+</div>
 
 ---
 
@@ -91,7 +97,7 @@ This section provides a visual walkthrough of the NextGen Exam Portal, showcasin
 ### Step 1: Home Page / Landing Page
 The welcoming home page provides an overview of the platform and easy navigation to registration and login.
 
-![Home Page](Screenshot 2025-07-25 133106.png)
+![Home Page](./Screenshot%202025-07-25%20133106.png)
 *The landing page with navigation to login and registration*
 
 ---
@@ -99,7 +105,7 @@ The welcoming home page provides an overview of the platform and easy navigation
 ### Step 2: User Registration
 New users can create an account by filling out the registration form with their details.
 
-![Registration Page](Screenshot 2025-07-25 142654.png)
+![Registration Page](./Screenshot%202025-07-25%20142654.png)
 *User registration form where new users can sign up*
 
 ---
@@ -107,7 +113,7 @@ New users can create an account by filling out the registration form with their 
 ### Step 3: User Login
 Registered users can securely log in using their credentials to access the platform.
 
-![Login Page](Screenshot 2025-07-25 142715.png)
+![Login Page](./Screenshot%202025-07-25%20142715.png)
 *Secure login page with JWT authentication*
 
 ---
@@ -115,7 +121,7 @@ Registered users can securely log in using their credentials to access the platf
 ### Step 4: User Dashboard
 After login, users are presented with a dashboard showing available quiz categories.
 
-![User Dashboard](Screenshot 2025-07-25 142735.png)
+![User Dashboard](./Screenshot%202025-07-25%20142735.png)
 *User dashboard displaying available quiz categories*
 
 ---
@@ -123,7 +129,7 @@ After login, users are presented with a dashboard showing available quiz categor
 ### Step 5: Quiz Selection
 Users can browse and select quizzes from different categories to take.
 
-![Quiz Selection](Screenshot 2025-07-25 142809.png)
+![Quiz Selection](./Screenshot%202025-07-25%20142809.png)
 *Quiz selection interface showing available quizzes in a category*
 
 ---
@@ -131,7 +137,7 @@ Users can browse and select quizzes from different categories to take.
 ### Step 6: Quiz Taking Interface
 The quiz interface allows users to answer questions with a clean and intuitive design.
 
-![Quiz Interface](Screenshot 2025-07-25 142817.png)
+![Quiz Interface](./Screenshot%202025-07-25%20142817.png)
 *Interactive quiz interface for taking exams*
 
 ---
@@ -139,7 +145,7 @@ The quiz interface allows users to answer questions with a clean and intuitive d
 ### Step 7: Admin Dashboard
 Administrators have access to a comprehensive dashboard for managing quizzes, categories, questions, and users.
 
-![Admin Dashboard](Screenshot 2025-07-25 142826.png)
+![Admin Dashboard](./Screenshot%202025-07-25%20142826.png)
 *Admin dashboard with management tools for quizzes, categories, questions, and users*
 
 ---
@@ -178,7 +184,10 @@ Administrators have access to a comprehensive dashboard for managing quizzes, ca
 
 ## 🏗️ Architecture
 
-### System Architecture
+### System Architecture Overview
+
+The NextGen Exam Portal follows a modern full-stack architecture with clear separation between frontend, backend, and database layers.
+
 ```
 ┌─────────────────┐         ┌─────────────────┐
 │   Angular UI    │ ◄─────► │  Spring Boot    │
@@ -190,6 +199,28 @@ Administrators have access to a comprehensive dashboard for managing quizzes, ca
                             │   MySQL Database│
                             └─────────────────┘
 ```
+
+### Detailed Backend Architecture
+
+The backend follows a layered architecture pattern with clear separation of concerns:
+
+![Backend Architecture](./Backend.png)
+*Complete backend architecture showing all layers and components*
+
+### Full System Architecture Diagram
+
+![System Architecture Diagram](./diagram.png)
+*Comprehensive system architecture including CI/CD pipeline, frontend, backend, and external services*
+
+### Application Architecture
+
+![Application Architecture](./Aspose.Words.96c9ccab-5ba4-4a7f-8856-f6f612851f78.015.png)
+*Detailed application architecture showing the flow from Angular SPA through security layer to database*
+
+### Additional Architecture Overview
+
+![Architecture Overview](./1.png)
+*Additional architecture diagram showing system components and data flow*
 
 ### Security Flow
 ```
@@ -721,6 +752,20 @@ Authorization: Bearer {your_jwt_token}
 ## 🗄️ Database Schema
 
 ### Entity Relationship Diagram
+
+The database schema consists of multiple interconnected entities managing users, roles, categories, quizzes, and questions.
+
+![Complete ERD Diagram](./Entity%20Diagram_User.jpg)
+*Complete Entity Relationship Diagram showing all database tables and their relationships*
+
+### User-Role Relationship Diagram
+
+The User-Role relationship is a many-to-many relationship resolved through a junction table:
+
+![User-Role ERD](./Entity%20Diagram_User.jpg)
+*Entity Relationship Diagram showing User, Role, and UserRole junction table relationships*
+
+### Conceptual ERD Overview
 
 ```
 ┌─────────────┐         ┌──────────────┐         ┌─────────────┐
